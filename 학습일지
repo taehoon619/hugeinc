@@ -1,0 +1,168 @@
+3/2 월요일 
+<태그이름 속성 = stlye, title, src, width, height, href(주소 링크)
+<a herf=" "></a> 링크하기! 링크는 a태그 필수!
+<img src=" " width="600px" height="400px">
+<img src=" " alt="이미지를 표시 할 수없는 경우 사용할 대체 텍스트 이미지를 음성으로 할 수있다
+<html lang="ko">문서의 언어는 lang속성으로 선언 할수있다.</html> "en-us" 미국
+title 단락 커서를 대면 나옴
+
+
+width, height 요소의 폭과 높이를 지정 여러 속성에서 쓰인다.
+stlye을 자세하게 들어가면 CSS stlye의 속성 200개
+<tagname stlye="property:value"></tagname>
+
+stlye="font-family:applymyungjo;"
+<body style="margin: 0; padding: 0; border: 0;"> 여백을 없앰 
+
+3/3 화요일
+<!doctype html>
+<html>  
+    <head>
+        <body>
+
+        </body>
+    </head>
+</html>
+<meta name="viewport" content="width=device-width, user-scalable=no"> 모바일에 적용시키위해 필요한 태그
+<body style="margin: 0; padding: 0; border: 0;"> 브라우저에서 여백을 정리함
+font-family:applemyungjo; font-size: 14px; font-weight: 200; 폰트 
+블럭은 끝나서 줄바꿈(자동으로 줄바뀜), 인라인 블럭은 줄바꿈이 없음
+@!@!@! margin border padding의 구분이 필요하다!!! 
+<head> </head> 폰트 링크는 헤드부분 헤드부분은 작업의 준비를 하는 공간
+letter-spacing 지간 조절 
+
+3/4 수요일 
+head 부분에 stlye을 따로 정리할수있다.
+<stlye> - inline, internal, linking
+
+
+3/6 금요일
+#시멘틱 마크업 = 의미있게 마크업
+docu object modle = DOM
+xhtml 여러군데 확장해서 쓸수있다. 문법은 더 정확하게
+https://validator.w3.org/ =  문법 검사기
+
+<head> stlye
+<title>문서 제목, 즐겨찾기에 저장할때 이름, 위쪽 탭에 제목 </title>
+
+<meta>  1.문자 세트 <meta charset="utf-8">
+        2.웹페이지에 대한 설명 <meta name+"description" comtent="free web tutorials">
+        3.검색엔진에 대한 키워드 정보 <meta name="keywords" content="html,CSS,xml,javascript">
+        4.페이지 작성자 정보 <meta name=" " content=" ">
+        5.뷰포트 설정
+
+<link>  1.외부 스타일 시트에 연결하는데 사용됩니다
+        2.link 요소로 미리 파일을 로드하는 경우 
+        
+internal stlye은 단일 html페이지에 대한 모든 요소에 영향을 미친다. ?? 
+
+<script> 자바스크립트를 정의하는데 사용한다. 
+<base> 페이지의 모든 상대 url애 대한 기본 url 및 기본 대상을 지정함
+파비콘(favicon) = 크롬 탭 이름 앞에 아이콘 = 파비콘
+</head>
+
+<body> 
+<hr> 수평 규칙 = 수평선 넣기 
+<p>  단락
+<br> 줄 바꿈
+<pre> 사전 형식화 된 텍스트를 정의 --> 내부 텍스트의 공백을 모두 유지 
+  데이터를 줄이기 위한 것과는 취지가 맞지 않음 (공백을 유지해 데이터가 많다.)  
+
+html 텍스트 형식
+<b> 굵은 텍스트
+<strong>
+<i>
+<em>
+<mark>
+<small>
+<del>
+<ins>
+<sub>
+<sup>
+
+html 목록  이것은 블럭 속성이다 !
+<ul> 순서가 없는 목록. <il>
+<dl>               <il>  
+<ol> 순서가 있는 목록. <il>
+<dl> 정의 할때 <dt> <dd>
+
+style="display: inline-block; 블록 나누기
+
+<div> 블럭속성 
+<span> 인라인 속성
+
+<div> 의미없는 그룹핑
+<section> 의미를 기준으로 그룹핑
+
+<q> 짧은 인용을 정의
+
+
+</body>
+
+3/9 월요일
+*클래스 속성
+.error {color:red;}
+<p class="error">hi iam sam</p>
+
+*아이디 속성
+#p01 {color:blue;}
+<p id="p01">i am tae hoon</p>
+
+CSS
+인라인 <p stlye="color:white;">  </p>
+인터널 body {color:white;}
+클래스 아이디 .white #fo1
+링킹
+
+css 네이밍 규칙
+1. 숫자로 시작 ㄴ
+2. 숫자가 중간이나 마지막 가능 0
+3. xhtml은 대소문자 구분함 소문자로 사용하는게 좋다
+4. '_',"-"를 사용해 의미를 구분지어라 공백이 있을때 
+5. 여러요소를 한 번에 선언할 수 있다!
+
+ 의미있는 이름으로 구조화해라!
+
+.huge_img_04 --> home_section
+.home_section_background
+.top_text_04
+.main_text_04
+
+1.박스모델
+2.마진의 합 > 큰 값으로 수렴
+3.width와 height는 content의 높이
+4.padding 값은 width나 height에 포함 안된다.
+5.css 네이밍
+
+3/10 화요일 (날아감)
+fixed  페이지가 스크롤 되더라도 고정됨
+
+3/11 수요일 
+블록개념
+1. 컨텐츠의 크기 (패딩, 보더, 마진) 컨텐츠 (width, height) padding, border, margin (top, right, bottom, left)
+2. 디스플레이 - 블럭, 인라인, 플렉스 (보여지는 것에 대해)
+3. 포지션 - 위치 (이것이 어디에 위치하냐) - position:fixed; left:calc(50% - 50px); top: 50px;
+ - fixed는 뷰포트 안에서 (기준이 뷰포트라는것이 중요하다)
+ - absolute 상위의 부모가 무엇인지 중요하다.  ( 부모에 relative가 있어야한다, 가장가까운 relative 적용 )
+4. 우선순위 (상대높이 z-index 값이 높을수록 위로 올라간다) 
+ z-index > position > fl   > normal flow
+
+ display:flex; 
+ justify-content:center; 가운데 정렬 (세로 방향일때는 반대로)
+ align-items:center; 가운데 정렬 (세로 방향일때는 반대로)
+ flex-direction: column; 세로 배치
+ display:flex; justify-content:center; align-items:center; 가로 세로 가운데 정렬!!!!
+
+ 3/13 금요일
+ cssgradient - 그라데이션
+ overflow 박스안에서 넘치는 부분을 잘라냄  *오버플로우?? overflow
+
+ display: flex 를 사용하면 옆으로 정렬되는데 박스를 만들어서 정리하는거다!!
+
+ 01. ㅡ win 선이 같다
+ win huge thanks. 사이의 간격이 같다. win huge thanks. campaign 가로 정렬
+ 핑크 h가 흰색 박스 가운데 있다.
+ 자간이 좁다.
+
+ 두번째 페이지 
+ 전체, 3등분,  
