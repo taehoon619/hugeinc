@@ -166,3 +166,16 @@ fixed  페이지가 스크롤 되더라도 고정됨
 
  두번째 페이지 
  전체, 3등분,  
+ 퍼센트는 직계 부모로부터 적용. 75vw 12.5vw 
+
+ 3/16 월요일 
+ vw는 뷰포트 화면의 절반 50이면 50%
+
+ box-sizing: border-box 패딩값으로 튀어나온것을 없애준다. 배경 안에서 크기를 고정시켜준다.
+ display: flex justify-content: center, flex-start,flex-end, space-between
+
+ 박스모델 레이아웃이 가장중요하다. !! 레이아웃 !!(박스 모델을 통한 레이아웃을 먼저 잡는것)
+
+ < position: relative, absolute 는 무엇 ? >
+
+%는 부모의 값의 비율
