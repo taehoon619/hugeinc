@@ -18,18 +18,27 @@
         h1 { font-family: HugeGothic-Bold; font-size: 300px; color: black; font-weight: 600;}
         p {font-family: Galaxia-Book; font-size: 24px; color: black; font-weight: 200;}
         
-        .home_section {width: 100vw; height: 100vh;}
-        .home_section_wrap {width: 100vw; height: 100vh;}
-        .logo {width: 60px; font-family: HugeGothic-Bold; font-size: 36px; color: deeppink; position: fixed; top: 60px; left: 940px;}
-        .home_section_h1 { justify-content: center; }
+        .home_section_01_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
+        url(img/hugeinc.png); background-size:cover;}
+        .home_section_01_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing:border-box;}
+        .home_section_01_index_wrap { display: flex; justify-content:flex-end;}
+        .home_section_01_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
+        22px; color:white; margin-right: 15px;}
+        .home_section_01_index_line { border-bottom: 1px solid white; width: 5vw; height: 10px;}
+        .home_section_01_content { width: 75vw; height:100vh; padding: 20vh 0; box-sizing:border-box;
+        padding-left:15px;}
+        .home_section_01_content_wrap { width: 45%; height: 60vh; }
+        .home_section_01_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:white;
+        line-height: 22px; letter-spacing:1px;}
+        .home_section_01_index_subwrap { width: 100%; height: calc(100% - 22px); display:flex;
+        flex-direction:column; justify-content: center;}
+        .home_section_01_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:white;}
+        .home_section_01_content_hr { border-bottom: 1px solid white; width: 5vw; margin: 5% 0; }
+        .home_section_01_content_description { font-family: Galaxie-Book; font-size: 18px; color: white; line-height:
+        30px; width: 85%;}
+
+
         
-        .width_100vw {width: 100vw;}
-        .margin_auto {margin: 0 auto; }
-        .text_align_center {text-align: center;}
-        .margin_top_36 {margin-top: 36px;}
-        .margin_top_60 {margin-top: 60px;}
-        .margin_top_72 {margin-top: 72px;}
-        .margin_top_96 {margin-top: 96px;}
         </style>
         <script>
         
@@ -39,27 +48,58 @@
     </head>
 
 <body>  
-
+    <!-- Home 처음섹션 -->
+<section>
     <div style="width: 78px; height: 78px; background-color:white; position:fixed; left:calc(50vw - 37px); top: 50px; display: flex; justify-content:center; align-items:center; z-index:100">
     <div
         style="width:48px; height:48px; color:#ea178c; font-size:36px; font-weight:700; font-family: HugeGothic-Bold; display: flex; justify-content:center; align-items:center;">
         H</div>
     </div>
-    
 
-
-    
-    <div
-        style="width:100vw; height:100vh; background-color:white; display: flex; justify-content:center; align-items:center; position:relative; font-family: HugeGothic-Bold;">
+    <div style="width:100vw; height:100vh; background-color:white; display: flex; justify-content:center; align-items:center; position:relative; font-family: HugeGothic-Bold;">
         <h1 style="width:800px; height:300px; text-align:center;"> Hello.</h1>
         <div style="width: 100vw; position:absolute; bottom:50px;">
         <p style="text-align:center;">Today at Huge.</p>
         </div>
         <div style="border-left: 1px solid black; width: 20px; height: 50px; position:absolute; bottom:0;">
         </div>
-          
     </div>
+</section>  
     
+    
+    <!-- 두번째 섹션 시작 -->
+<section class="home_section_01">
+    <div class="home_section_01_wrap">
+        <!-- home 두번째 섹션 wrap 시작 -->
+            
+            <div class="home_section_01_index"> <!-- 두번째 섹션 index 시작 -->
+                <div class="home_section_01_index_wrap" >
+                    <p class="home_section_01_index_number">01.</p>
+                    <div class="home_section_01_index_line"></div>
+                </div>
+            </div> <!-- 두번째 섹션 index 끝 -->
+        
+            <div class="home_section_01_content">
+                <div class="home_section_01_content_wrap">
+                    <div class="home_section_01_content_subtitle">Win.</div>
+
+                    <div class="home_section_01_index_subwrap">
+                        <h2 class="home_section_01_content_title"
+                            >Huge Thanks.</h2>
+                        <div class="home_section_01_content_hr"
+                            ></div>
+                        <p class="home_section_01_content_description" >Campaign US
+                            named Huge its 2019 Innovation Agency <br> of the Year.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="home_section_01_detail">
+    
+        </div>
+    </div>
+
+</section> <!-- 두번째 섹션 끝-->
+   
 
     
 
