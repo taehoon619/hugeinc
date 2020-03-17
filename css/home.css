@@ -1,0 +1,460 @@
+@font-face {
+    font-family: Galaxie-Book;
+    src: url(../font/GalaxieCopernicus-Book.woff)
+}
+
+@font-face {
+    font-family: HugeGothic-Bold;
+    src: url(../font/HugeGothic-Bold.woff)
+}
+
+h1 {
+    font-family: HugeGothic-Bold;
+    font-size: 300px;
+    color: black;
+    font-weight: 600;
+}
+
+p {
+    font-family: Galaxia-Book;
+    font-size: 24px;
+    color: black;
+    font-weight: 200;
+}
+
+/* 로고 */
+.logo {
+    width: 78px;
+    height: 78px;
+    background-color: white;
+    position: fixed;
+    left: calc(50vw - 37px);
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100
+}
+
+.logo_box {
+    width: 48px;
+    height: 48px;
+    color: #ea178c;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: HugeGothic-Bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 메인 */
+.hello_wrap {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: HugeGothic-Bold;
+}
+
+.hello_title {
+    width: 800px;
+    height: 300px;
+    text-align: center;
+}
+
+/* background-image */
+
+.home_section_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc.png);
+    background-size: cover;
+}
+
+.home_section_04_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc10.png);
+    background-size: cover;
+}
+
+.home_section_05_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc12.png);
+    background-size: cover;
+}
+
+.home_section_06_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc2.jpg);
+    background-size: cover;
+}
+
+.home_section_07_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc3.jpg);
+    background-size: cover;
+}
+
+.home_section_08_wrap {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image:
+        url(../img/hugeinc1.jpg);
+    background-size: cover;
+}
+
+/* 공통 섹션 */
+
+.home_section_index {
+    width: 12.5vw;
+    height: 100vh;
+    padding-top: 20vh;
+    box-sizing: border-box;
+}
+
+.home_section_index_wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home_section_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: white;
+    margin-right: 15px;
+}
+
+.home_section_index_line {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_content {
+    width: 75vw;
+    height: 100vh;
+    padding: 20vh 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.home_section_content_wrap {
+    width: 45%;
+    height: 60vh;
+}
+
+.home_section_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_index_subwrap {
+    width: 100%;
+    height: calc(100% - 22px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_section_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+
+.home_section_content_hr {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: white;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+
+
+/* 4section */
+
+.home_section_04_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: black;
+    margin-right: 15px;
+}
+
+.home_section_04_index_line {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_04_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: black;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_04_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: black;
+}
+
+.home_section_04_content_hr {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_04_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: black;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+/* 5sec */
+
+.home_section_05_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: white;
+    margin-right: 15px;
+}
+
+.home_section_05_index_line {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_05_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_05_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+
+.home_section_05_content_hr {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_05_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: white;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+/* 6sec */
+
+
+.home_section_06_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: black;
+    margin-right: 15px;
+}
+
+.home_section_06_index_line {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_06_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: black;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_06_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: black;
+}
+
+.home_section_06_content_hr {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_06_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: black;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+/* 7sec */
+
+
+.home_section_07_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: white;
+    margin-right: 15px;
+}
+
+.home_section_07_index_line {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_07_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_07_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+
+.home_section_07_content_hr {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_07_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: white;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+/* 8sec */
+
+.home_section_08_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: black;
+    margin-right: 15px;
+}
+
+.home_section_08_index_line {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_section_08_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: black;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_section_08_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: black;
+}
+
+.home_section_08_content_hr {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_section_08_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: black;
+    line-height:
+        30px;
+    width: 85%;
+}
