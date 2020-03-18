@@ -8,99 +8,13 @@
         <meta name="keywords" content="Design, Agency, Web, UI, UX ">
         <meta name="autor" content="Lee">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
-        
-        <!-- 브라우저 css 초기화  -->
-        <link type="text/css" rel="stylesheet" href="css/destyle.css" >
-        
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+        <link rel="stylesheet" type="text/css" href="css/destyle.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css">
 
         <style>
-        @font-face { font-family: Galaxie-Book; src:url(font/GalaxieCopernicus-Book.woff)}
-        @font-face { font-family: HugeGothic-Bold; src:url(font/HugeGothic-Bold.woff)}
         
-        h1 { font-family: HugeGothic-Bold; font-size: 300px; color: black; font-weight: 600;}
-        p {font-family: Galaxia-Book; font-size: 24px; color: black; font-weight: 200;}
-        
-        .home_section_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc.png); background-size:cover;}
-        .home_section_index {width: 12.5vw; height: 100vh; padding-top: 20vh; box-sizing:border-box;}
-        .home_section_index_wrap { display: flex; justify-content:flex-end;}
-        .home_section_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:white; margin-right: 15px;}
-        .home_section_index_line { border-bottom: 1px solid white; width: 5vw; height: 10px;}
-        .home_section_content { width: 75vw; height:100vh; padding: 20vh 0; box-sizing:border-box;
-        padding-left:15px;}
-        .home_section_content_wrap { width: 45%; height: 60vh; }
-        .home_section_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:white;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_index_subwrap { width: 100%; height: calc(100% - 22px); display:flex;
-        flex-direction:column; justify-content: center;}
-        .home_section_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:white;}
-        .home_section_content_hr { border-bottom: 1px solid white; width: 5vw; margin: 5% 0; }
-        .home_section_content_description { font-family: Galaxie-Book; font-size: 18px; color: white; line-height:
-        30px; width: 85%;}
-
-        .home_section_04_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc10.png); background-size:cover;}
-        .home_section_04_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:black; margin-right: 15px;}
-        .home_section_04_index_line { border-bottom: 1px solid black; width: 5vw; height: 10px;}
-        .home_section_04_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:black;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_04_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:black;}
-        .home_section_04_content_hr { border-bottom: 1px solid black; width: 5vw; margin: 5% 0; }
-        .home_section_04_content_description { font-family: Galaxie-Book; font-size: 18px; color: black; line-height:
-        30px; width: 85%;}
-
-        .home_section_05_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc12.png); background-size:cover;}
-        .home_section_05_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:white; margin-right: 15px;}
-        .home_section_05_index_line { border-bottom: 1px solid white; width: 5vw; height: 10px;}
-        .home_section_05_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:white;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_05_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:white;}
-        .home_section_05_content_hr { border-bottom: 1px solid white; width: 5vw; margin: 5% 0; }
-        .home_section_05_content_description { font-family: Galaxie-Book; font-size: 18px; color: white; line-height:
-        30px; width: 85%;}
-
-        .home_section_06_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc2.jpg); background-size:cover;}
-        .home_section_06_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:black; margin-right: 15px;}
-        .home_section_06_index_line { border-bottom: 1px solid black; width: 5vw; height: 10px;}
-        .home_section_06_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:black;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_06_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:black;}
-        .home_section_06_content_hr { border-bottom: 1px solid black; width: 5vw; margin: 5% 0; }
-        .home_section_06_content_description { font-family: Galaxie-Book; font-size: 18px; color: black; line-height:
-        30px; width: 85%;}
-
-        .home_section_07_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc3.jpg); background-size:cover;}
-        .home_section_07_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:white; margin-right: 15px;}
-        .home_section_07_index_line { border-bottom: 1px solid white; width: 5vw; height: 10px;}
-        .home_section_07_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:white;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_07_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:white;}
-        .home_section_07_content_hr { border-bottom: 1px solid white; width: 5vw; margin: 5% 0; }
-        .home_section_07_content_description { font-family: Galaxie-Book; font-size: 18px; color: white; line-height:
-        30px; width: 85%;}
-        
-        .home_section_08_wrap { width: 100vw; height:100vh; box-sizing:border-box; display:flex; background-image:
-        url(img/hugeinc1.jpg); background-size:cover;}
-        .home_section_08_index_number {font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-        22px; color:black; margin-right: 15px;}
-        .home_section_08_index_line { border-bottom: 1px solid black; width: 5vw; height: 10px;}
-        .home_section_08_content_subtitle {font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:black;
-        line-height: 22px; letter-spacing:1px;}
-        .home_section_08_content_title { font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:black;}
-        .home_section_08_content_hr { border-bottom: 1px solid black; width: 5vw; margin: 5% 0; }
-        .home_section_08_content_description { font-family: Galaxie-Book; font-size: 18px; color: black; line-height:
-        30px; width: 85%;}
-        
-
         
         </style>
         <script>
@@ -113,256 +27,270 @@
 <body>  
     
 <section> <!-- 로고 -->
-    <div style="width: 78px; height: 78px; background-color:white; position:fixed; left:calc(50vw - 37px); top: 50px; display: flex; justify-content:center; align-items:center; z-index:100">
-    <div
-        style="width:48px; height:48px; color:#ea178c; font-size:36px; font-weight:700; font-family: HugeGothic-Bold; display: flex; justify-content:center; align-items:center;">
+    <div class="logo">
+    <div class="logo_box">
         H</div>
     </div>
 
     <!-- 처음 속성 -->
-    <div style="width:100vw; height:100vh; background-color:white; display: flex; justify-content:center; align-items:center; position:relative; font-family: HugeGothic-Bold;">
-        <h1 style="width:800px; height:300px; text-align:center;"> Hello.</h1>
-        <div style="width: 100vw; position:absolute; bottom:50px;">
-        <p style="text-align:center;">Today at Huge.</p>
+    <div class="hello_wrap">
+        <h1 class="hello_title"> Hello.</h1>
+        <div class="hello_bot">
+            <p>Today at Huge.</p>
         </div>
-        <div style="border-left: 1px solid black; width: 20px; height: 50px; position:absolute; bottom:0;">
+        
+        <div class="hello_line">
         </div>
     </div>
 </section>  
     
     
-    <!-- 두번째 섹션 시작 -->
-<section class="home_section">
-    <div class="home_section_wrap">
-        <!-- home 두번째 섹션 wrap 시작 -->
+    <!-- 섹션 시작 -->
+<section id="home_01">
+    <div class="home_01_wrap">
+        <!-- home 섹션 wrap 시작 -->
             
-            <div class="home_section_index"> <!-- 두번째 섹션 index 시작 -->
-                <div class="home_section_index_wrap">
-                    <p class="home_section_index_number">01.</p>
-                    <div class="home_section_index_line"></div>
+            <div class="home_01_index"> <!-- 섹션 index 시작 -->
+                <div class="home_01_index_wrap">
+                    <p class="home_01_index_number">01.</p>
+                    <div class="home_01_index_line"></div>
                 </div>
-            </div> <!-- 두번째 섹션 index 끝 -->
+            </div> <!-- 섹션 index 끝 -->
         
-            <div class="home_section_content">
-                <div class="home_section_content_wrap">
-                    <div class="home_section_content_subtitle">Win.</div>
+            <div class="home_01_content">
+                <div class="home_01_content_wrap">
+                    <div class="home_01_content_subtitle">Win.</div>
 
-                    <div class="home_section_index_subwrap">
-                        <h2 class="home_section_content_title">Huge Thanks.</h2>
-                        <div class="home_section_content_hr"></div>
-                        <p class="home_section_content_description" >Campaign US
+                    <div class="home_01_index_subwrap">
+                        <h2 class="home_01_content_title">Huge Thanks.</h2>
+                        <div class="home_01_content_hr"></div>
+                        <p class="home_01_content_description" >Campaign US
                             named Huge its 2019 Innovation Agency <br> of the Year.</p>
                     </div>
                 </div>
             </div>
-        <div class="home_section_detail">
+        <div class="home_01_detail">
     
         </div>
     </div>
 
-</section> <!-- 두번째 섹션 끝-->
+</section> <!-- 섹션 끝-->
 
-<section class="home_section_02"> <!-- 세번째 섹션 시작 -->
-    <div class="home_section_02_wrap" style="width: 100vw; height:100vh; background-image:url(img/hugeinc02.png); box-sizing: border-box; background-size: cover; display:flex;">
+<section class="home_01">
+    <div class="home_01_02_wrap">
+        <!-- home 2 섹션 wrap 시작 -->
 
-        <div class="home_section_02_index" style="width: 12.5vw; height: 100vh;  box-sizing:border-box; padding-top: 20vh;">
-            <div class="home_section_02_index_wrap" style="display:flex; justify-content:flex-end;">
-                <p class="home_section_02number" style="font-family: HugeGothic-Bold; font-size: 22px; font-weight:100; line-height:
-                22px; color:white; margin-right: 15px;">02.</p>
-                <div class="home_section_02_line" style="border-bottom: 1px solid white; width: 5vw; height:10px;"></div>
+        <div class="home_01_index">
+            <!-- 2 섹션 index 시작 -->
+            <div class="home_01_index_wrap">
+                <p class="home_01_02_index_number">02.</p>
+                <div class="home_01_02_index_line"></div>
             </div>
-        </div>
-        <div class="home_section_02_content" style="width: 75vw; height:100vh;  padding: 20vh 0; box-sizing:border-box; padding-left: 15px;">
-            <div class="home_section_02_content_wrap" style="width:45%; height:60vh;">
-                    <div class="home_section_02_suptitle" style="font-family: HugeGothic-Bold; font-size:22px; font-weight:100; color:white; line-height: 22px; letter-spacing:1px;">Work.</div>
-            
-                <div class="home_section_02_content_subwrap" style="width: 100%; height: calc(100% - 22px);  display:flex; flex-direction:column; justify-content:center;">
-                    <h2 style="font-family: HugeGothic-Bold; font-size:80px; font-weight:100; color:white;">#FreeThePeriod.</h2>
-                    <div style="border-bottom: 1px solid white; width:5vw; margin: 5% 0;"></div>
-                    <p style="font-family: Galaxie-Book; font-size: 18px; color: white; line-height:
-                    30px; width: 85%;">To highlight period inequality, Huge partnered with<br> PERIOD. to build a coin-operated toilet paper dispenser<br> and installed it in men's restrooms.</p>
+        </div> <!-- 2 섹션 index 끝 -->
+
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_02_content_subtitle">Work.</div>
+
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_02_content_title">#FreeThePeriod.</h2>
+                    <div class="home_01_02_content_hr"></div>
+                    <p class="home_01_02_content_description">To highlight period inequality, Huge partnered with<br>
+                    ERIOD. to build a coin-operated toilet paper dispenser<br>
+                    and installed it in men's restrooms.</p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="home_01_detail">
 
-<section class="home_section">
-    <div class="home_section_04_wrap">
+        </div>
+    </div>
+
+</section> <!-- 2 섹션 끝-->
+
+<section class="home_01">
+    <div class="home_01_03_wrap">
+        <!-- home 3 섹션 wrap 시작 -->
+
+        <div class="home_01_index">
+            <!-- 3 섹션 index 시작 -->
+            <div class="home_01_index_wrap">
+                <p class="home_01_03_index_number black">03.</p>
+                <div class="home_01_03_index_line"></div>
+            </div>
+        </div> <!-- 3 섹션 index 끝 -->
+
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_03_content_subtitle">Leadership.</div>
+
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_03_content_title">Huge<br> Appointment.</h2>
+                    <div class="home_01_03_content_hr"></div>
+                    <p class="home_01_03_content_description">After three years leading global strategic growth for Huge,<br>Matt Weiss has been appointed President, Huge BK.</p>
+                </div>
+            </div>
+        </div>
+        <div class="home_01_detail">
+
+        </div>
+    </div>
+
+</section> <!-- 3 섹션 끝-->
+
+<section class="home_01">
+    <div class="home_01_04_wrap">
         <!-- home 4 섹션 wrap 시작 -->
 
-        <div class="home_section_index">
+        <div class="home_01_index">
             <!-- 4 섹션 index 시작 -->
-            <div class="home_section_index_wrap">
-                <p class="home_section_04_index_number">03.</p>
-                <div class="home_section_04_index_line"></div>
+            <div class="home_01_index_wrap">
+                <p class="home_01_04_index_number">04.</p>
+                <div class="home_01_04_index_line"></div>
             </div>
         </div> <!-- 4 섹션 index 끝 -->
 
-        <div class="home_section_content">
-            <div class="home_section_content_wrap">
-                <div class="home_section_04_content_subtitle">Leadership.</div>
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_04_content_subtitle">Work.</div>
 
-                <div class="home_section_index_subwrap">
-                    <h2 class="home_section_04_content_title">Huge<br> Appointment.</h2>
-                    <div class="home_section_04_content_hr"></div>
-                    <p class="home_section_04_content_description">After three years leading global strategic growth for Huge,<br>Matt Weiss has been appointed President, Huge BK.</p>
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_04_content_title">It's in the bag.</h2>
+                    <div class="home_01_04_content_hr"></div>
+                    <p class="home_01_04_content_description">Huge rebrands grocery delivery service Shipt.</p>
                 </div>
             </div>
         </div>
-        <div class="home_section_detail">
+        <div class="home_01_detail">
 
         </div>
     </div>
 
-</section> <!-- 5 섹션 끝-->
+</section> <!-- 4 섹션 끝-->
 
-<section class="home_section">
-    <div class="home_section_05_wrap">
+<section class="home_01">
+    <div class="home_01_05_wrap">
         <!-- home 5 섹션 wrap 시작 -->
 
-        <div class="home_section_index">
+        <div class="home_01_index">
             <!-- 5 섹션 index 시작 -->
-            <div class="home_section_index_wrap">
-                <p class="home_section_05_index_number">04.</p>
-                <div class="home_section_05_index_line"></div>
+            <div class="home_01_index_wrap">
+                <p class="home_01_05_index_number">05.</p>
+                <div class="home_01_05_index_line"></div>
             </div>
         </div> <!-- 5 섹션 index 끝 -->
 
-        <div class="home_section_content">
-            <div class="home_section_content_wrap">
-                <div class="home_section_05_content_subtitle">Work.</div>
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_05_content_subtitle">Leadership.</div>
 
-                <div class="home_section_index_subwrap">
-                    <h2 class="home_section_05_content_title">It's in the bag.</h2>
-                    <div class="home_section_05_content_hr"></div>
-                    <p class="home_section_05_content_description">Huge rebrands grocery delivery service Shipt.</p>
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_05_content_title">Hello Fura.</h2>
+                    <div class="home_01_05_content_hr"></div>
+                    <p class="home_01_05_content_description">Huge welcomes Fura Johannesdottir as Chief Design<br> Officer.</p>
                 </div>
             </div>
         </div>
-        <div class="home_section_detail">
+        <div class="home_01_detail">
 
         </div>
     </div>
 
 </section> <!-- 5 섹션 끝-->
 
-<section class="home_section">
-    <div class="home_section_06_wrap">
+<section class="home_01">
+    <div class="home_01_06_wrap">
         <!-- home 6 섹션 wrap 시작 -->
 
-        <div class="home_section_index">
+        <div class="home_01_index">
             <!-- 6 섹션 index 시작 -->
-            <div class="home_section_index_wrap">
-                <p class="home_section_06_index_number">05.</p>
-                <div class="home_section_06_index_line"></div>
+            <div class="home_01_index_wrap">
+                <p class="home_01_06_index_number">06.</p>
+                <div class="home_01_06_index_line"></div>
             </div>
         </div> <!-- 6 섹션 index 끝 -->
 
-        <div class="home_section_content">
-            <div class="home_section_content_wrap">
-                <div class="home_section_06_content_subtitle">Leadership.</div>
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_06_content_subtitle">Work.</div>
 
-                <div class="home_section_index_subwrap">
-                    <h2 class="home_section_06_content_title">Hello Fura.</h2>
-                    <div class="home_section_06_content_hr"></div>
-                    <p class="home_section_06_content_description">Huge welcomes Fura Johannesdottir as Chief Design<br> Officer.</p>
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_06_content_title">#ColorCommentary.</h2>
+                    <div class="home_01_06_content_hr"></div>
+                    <p class="home_01_06_content_description">Huge partnered with Pantone on a social media campaign<br> for the Big Game.</p>
                 </div>
             </div>
         </div>
-        <div class="home_section_detail">
+        <div class="home_01_detail">
 
         </div>
     </div>
 
 </section> <!-- 6 섹션 끝-->
 
-<section class="home_section">
-    <div class="home_section_07_wrap">
+<section class="home_01">
+    <div class="home_01_07_wrap">
         <!-- home 7 섹션 wrap 시작 -->
 
-        <div class="home_section_index">
+        <div class="home_01_index">
             <!-- 7 섹션 index 시작 -->
-            <div class="home_section_index_wrap">
-                <p class="home_section_07_index_number">06.</p>
-                <div class="home_section_07_index_line"></div>
+            <div class="home_01_index_wrap">
+                <p class="home_01_07_index_number">07.</p>
+                <div class="home_01_07_index_line"></div>
             </div>
         </div> <!-- 7 섹션 index 끝 -->
 
-        <div class="home_section_content">
-            <div class="home_section_content_wrap">
-                <div class="home_section_07_content_subtitle">Work.</div>
+        <div class="home_01_content">
+            <div class="home_01_content_wrap">
+                <div class="home_01_07_content_subtitle">Culture.</div>
 
-                <div class="home_section_index_subwrap">
-                    <h2 class="home_section_07_content_title">#ColorCommentary.</h2>
-                    <div class="home_section_07_content_hr"></div>
-                    <p class="home_section_07_content_description">Huge partnered with Pantone on a social media campaign<br> for the Big Game.</p>
+                <div class="home_01_index_subwrap">
+                    <h2 class="home_01_07_content_title">Black History<br> Month.</h2>
+                    <div class="home_01_07_content_hr"></div>
+                    <p class="home_01_07_content_description">This is not a moment, issa movement. H by Jacqueline<br> 
+                    DeBerry</p>
                 </div>
             </div>
         </div>
-        <div class="home_section_detail">
+        <div class="home_01_detail">
 
         </div>
     </div>
 
 </section> <!-- 7 섹션 끝-->
 
-<section class="home_section">
-    <div class="home_section_08_wrap">
-        <!-- home 8 섹션 wrap 시작 -->
 
-        <div class="home_section_index">
-            <!-- 8 섹션 index 시작 -->
-            <div class="home_section_index_wrap">
-                <p class="home_section_08_index_number">07.</p>
-                <div class="home_section_08_index_line"></div>
-            </div>
-        </div> <!-- 8 섹션 index 끝 -->
+<!-- footer 의 시작 -->
 
-        <div class="home_section_content">
-            <div class="home_section_content_wrap">
-                <div class="home_section_08_content_subtitle">Culture.</div>
+<div class="home_footer bg_color_black">
 
-                <div class="home_section_index_subwrap">
-                    <h2 class="home_section_08_content_title">Black History<br> Month.</h2>
-                    <div class="home_section_08_content_hr"></div>
-                    <p class="home_section_08_content_description">This is not a moment, issa movement. H by Jacqueline<br> 
-                    DeBerry</p>
-                </div>
-            </div>
+    <div class="footer_content_wrap">
+        <div class="footer_content_left">
+            <div class="white">HUGE</div> 
+            
+            <p class="white">Make something you love.</p>
         </div>
-        <div class="home_section_detail">
-
-        </div>
-    </div>
-
-</section> <!-- 8 섹션 끝-->
-
-<section> <!-- 마지막 -->
-<div style="">  
-    <div>
-        <div>HUGE</div>
-        <div>l</div>
-        <div></div>
-    </div>
-    <div>
-        <div>
-            <div>Hello</div>
-            <div>Work</div>
-            <div>About</div>
-            <div>Careers</div>
-            <div>Contact</div>
-        </div>
-        <div>
-            <div>2020 Huge LLC. Legal</div>
-            <div>CCPA Privacy Notice</div>
-            <div>Modern Slavery Act Statement</div>
-        </div>
-    </div>
-</div>
-
-</section>
     
+    
+    
+        <div class="footer_content_right white">
+            <div>
+                <a href="hello.html">Hello</a> 
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html" class="margin_right_none">Contact</a>
+            </div>
+            <p class="footer_aside">© 2020 Huge LLC. Legal.<br>
+            CCPA Privacy Notice<br>
+            Modern Slavery Act Statement</p>
+    
+    
+        </div>
+    </div></div>
+
+
+</div>
 
 
 
