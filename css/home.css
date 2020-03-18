@@ -21,6 +21,9 @@ p {
     color: black;
     font-weight: 200;
 }
+/* color */ 
+.white { color: white; }
+.black { color: black; }
 
 /* 로고 */
 .logo {
@@ -66,9 +69,28 @@ p {
     text-align: center;
 }
 
+.hello_bot {
+    width: 100vw;
+    position: absolute;
+    bottom: 50px;
+}
+
+.hello_bot p {
+    text-align: center;
+}
+
+.hello_line {
+    border-left: 1px solid black;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+
 /* background-image */
 
-.home_section_wrap {
+.home_01_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -78,7 +100,16 @@ p {
     background-size: cover;
 }
 
-.home_section_04_wrap {
+.home_01_02_wrap {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/hugeinc02.png);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+}
+
+.home_01_03_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -88,7 +119,7 @@ p {
     background-size: cover;
 }
 
-.home_section_05_wrap {
+.home_01_04_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -98,7 +129,7 @@ p {
     background-size: cover;
 }
 
-.home_section_06_wrap {
+.home_01_05_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -108,7 +139,7 @@ p {
     background-size: cover;
 }
 
-.home_section_07_wrap {
+.home_01_06_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -118,7 +149,7 @@ p {
     background-size: cover;
 }
 
-.home_section_08_wrap {
+.home_01_07_wrap {
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;
@@ -130,19 +161,19 @@ p {
 
 /* 공통 섹션 */
 
-.home_section_index {
+.home_01_index {
     width: 12.5vw;
     height: 100vh;
     padding-top: 20vh;
     box-sizing: border-box;
 }
 
-.home_section_index_wrap {
+.home_01_index_wrap {
     display: flex;
     justify-content: flex-end;
 }
 
-.home_section_index_number {
+.home_01_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -152,13 +183,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_index_line {
+.home_01_index_line {
     border-bottom: 1px solid white;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_content {
+.home_01_content {
     width: 75vw;
     height: 100vh;
     padding: 20vh 0;
@@ -166,12 +197,12 @@ p {
     padding-left: 15px;
 }
 
-.home_section_content_wrap {
+.home_01_content_wrap {
     width: 45%;
     height: 60vh;
 }
 
-.home_section_content_subtitle {
+.home_01_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -180,7 +211,7 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_index_subwrap {
+.home_01_index_subwrap {
     width: 100%;
     height: calc(100% - 22px);
     display: flex;
@@ -188,20 +219,69 @@ p {
     justify-content: center;
 }
 
-.home_section_content_title {
+.home_01_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: white;
 }
 
-.home_section_content_hr {
+.home_01_content_hr {
     border-bottom: 1px solid white;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_content_description {
+.home_01_content_description {
+    font-family: Galaxie-Book;
+    font-size: 18px;
+    color: white;
+    line-height:
+        30px;
+    width: 85%;
+}
+
+/* 2section */ 
+
+.home_01_02_index_number {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    line-height:
+        22px;
+    color: white;
+    margin-right: 15px;
+}
+
+.home_01_02_index_line {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    height: 10px;
+}
+
+.home_01_02_content_subtitle {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.home_01_02_content_title {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+
+.home_01_02_content_hr {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.home_01_02_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: white;
@@ -211,10 +291,9 @@ p {
 }
 
 
+/* 3section */
 
-/* 4section */
-
-.home_section_04_index_number {
+.home_01_03_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -224,13 +303,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_04_index_line {
+.home_01_03_index_line {
     border-bottom: 1px solid black;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_04_content_subtitle {
+.home_01_03_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -239,20 +318,20 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_04_content_title {
+.home_01_03_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: black;
 }
 
-.home_section_04_content_hr {
+.home_01_03_content_hr {
     border-bottom: 1px solid black;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_04_content_description {
+.home_01_03_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: black;
@@ -263,7 +342,7 @@ p {
 
 /* 5sec */
 
-.home_section_05_index_number {
+.home_01_04_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -273,13 +352,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_05_index_line {
+.home_01_04_index_line {
     border-bottom: 1px solid white;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_05_content_subtitle {
+.home_01_04_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -288,20 +367,20 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_05_content_title {
+.home_01_04_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: white;
 }
 
-.home_section_05_content_hr {
+.home_01_04_content_hr {
     border-bottom: 1px solid white;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_05_content_description {
+.home_01_04_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: white;
@@ -313,7 +392,7 @@ p {
 /* 6sec */
 
 
-.home_section_06_index_number {
+.home_01_05_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -323,13 +402,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_06_index_line {
+.home_01_05_index_line {
     border-bottom: 1px solid black;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_06_content_subtitle {
+.home_01_05_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -338,20 +417,20 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_06_content_title {
+.home_01_05_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: black;
 }
 
-.home_section_06_content_hr {
+.home_01_05_content_hr {
     border-bottom: 1px solid black;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_06_content_description {
+.home_01_05_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: black;
@@ -363,7 +442,7 @@ p {
 /* 7sec */
 
 
-.home_section_07_index_number {
+.home_01_06_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -373,13 +452,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_07_index_line {
+.home_01_06_index_line {
     border-bottom: 1px solid white;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_07_content_subtitle {
+.home_01_06_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -388,20 +467,20 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_07_content_title {
+.home_01_06_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: white;
 }
 
-.home_section_07_content_hr {
+.home_01_06_content_hr {
     border-bottom: 1px solid white;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_07_content_description {
+.home_01_06_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: white;
@@ -412,7 +491,7 @@ p {
 
 /* 8sec */
 
-.home_section_08_index_number {
+.home_01_07_index_number {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -422,13 +501,13 @@ p {
     margin-right: 15px;
 }
 
-.home_section_08_index_line {
+.home_01_07_index_line {
     border-bottom: 1px solid black;
     width: 5vw;
     height: 10px;
 }
 
-.home_section_08_content_subtitle {
+.home_01_07_content_subtitle {
     font-family: HugeGothic-Bold;
     font-size: 22px;
     font-weight: 100;
@@ -437,20 +516,20 @@ p {
     letter-spacing: 1px;
 }
 
-.home_section_08_content_title {
+.home_01_07_content_title {
     font-family: HugeGothic-Bold;
     font-size: 80px;
     font-weight: 100;
     color: black;
 }
 
-.home_section_08_content_hr {
+.home_01_07_content_hr {
     border-bottom: 1px solid black;
     width: 5vw;
     margin: 5% 0;
 }
 
-.home_section_08_content_description {
+.home_01_07_content_description {
     font-family: Galaxie-Book;
     font-size: 18px;
     color: black;
@@ -463,13 +542,13 @@ p {
 .bg_color_black {
     background-color: black;
 }
-.white { color: white;}
+
 
 /* footer 시작 */
 
 .home_footer { width: 100vw; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
 
-.footer_content_wrap {  }
+
 
 /* div 안에 선택 */
     .home_footer > div {
