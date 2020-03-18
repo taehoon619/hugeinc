@@ -458,3 +458,56 @@ p {
         30px;
     width: 85%;
 }
+
+/* footer */ 
+.bg_color_black {
+    background-color: black;
+}
+.white { color: white;}
+
+/* footer 시작 */
+
+.home_footer { width: 100vw; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
+
+.footer_content_wrap {  }
+
+/* div 안에 선택 */
+    .home_footer > div {
+    width: 100vw;
+    height: 90px;
+    padding: 0 calc(12.5vw + 15px); display: flex; justify-content: space-between;
+}
+
+.footer_content_left { display: flex; align-items:  center;
+}
+
+    .footer_content_left > div {
+    font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px;  border-right: 1px solid #888888; padding-right: 32px; margin-right: 32px; height: 42px;
+    letter-spacing: 2px;
+}
+
+    .footer_content_left > p {
+    font-family: HugeGothic-Bold;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.footer_content_right { display: flex; flex-direction: column; }
+    
+    .footer_content_right > div {
+    font-family: HugeGothic-Bold;
+    font-size: 16px;
+    line-height: 14px;
+    color: #C8C8C8; letter-spacing: 1px; line-height: 24px; margin-bottom: 10px;
+}
+
+    .footer_content_right a {margin-right: 15px;}
+
+    .footer_content_right a:last-child { margin-right: 0;}
+
+.footer_aside {
+    font-family: Galaxie-Book;
+    color: #C8C8C8; font-size: 12px; line-height: 18px; text-align: right;
+}
+
+
