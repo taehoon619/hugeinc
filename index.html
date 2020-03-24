@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ko">
     <head>
-        <title> Hugeinc</title>
+        <title> Huge Inc.</title>
         <meta charset="utf-8">
         <meta name="description" content="Huge Inc Website">
         <meta name="keywords" content="Design, Agency, Web, UI, UX ">
         <meta name="autor" content="Lee">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <!-- 폰트 링크 -->
         <link rel="stylesheet" type="text/css"
             href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+        
+        <!-- css 링크 -->
         <link rel="stylesheet" type="text/css" href="css/destyle.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
 
@@ -19,18 +23,68 @@
         </style>
         <script>
         
+        /* 변수 선언 */
+        var header_state = 0; /* 로고의 클릭 상태, 헤더 안보이기 상태 */ 
+
+        function logoClick(params) {
+        if (header_state == 0 ) { document.getElementById("home_header").style ="visibility:visible;"
+        header_state = 1; /* 헤더 클릭 상태로 전환, 헤더 보이기 상태 */
+        }
+        else { document.getElementById("home_header").style ="visibility:hidden;"
+        header_state = 0; /* 로고 클릭 상태로 기억, 헤더 안보이기 상태 */
+        }
+        }
+
         
         
         </script>
     </head>
 
 <body>  
+
+<div id="logo" onclick="logoClick()">
+    <div class="logo_box">H</div>
+</div>
+<header id="home_header">
+    <nav class="gnb">
+        <ul class="menu_wrap"> <!-- 메뉴 ul 시작 -->
+            <li>
+                <a href="index.html" target="">Hello.</a>
+                <p>Today at Huge.</p>
+                <div></div>
+            </li>
+            <li>
+                <a>Work.</a>
+                <p>What we've made</p>
+                <div></div>
+            </li>
+            <li>
+                <a>About.</a>
+                <p>Who we are.</p>
+                <div></div>
+            </li>
+            <li>
+                <a>Careers.</a>
+                <p>Join the team.</p>
+                <div></div>
+            </li>
+            <li>
+                <a>Contact.</a>
+                <p>Get in touch.</p>
+                <div></div>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="gnb_aside">
+        <p>Explore our thought leadership at</p><a>MAGENTA<span>.</span></a>
+    </div>
+
+</header>
+</div>
     
 <section> <!-- 로고 -->
-    <div class="logo">
-    <div class="logo_box">
-        H</div>
-    </div>
+    
 
     <!-- 처음 속성 -->
     <div class="hello_wrap">
@@ -52,19 +106,19 @@
             
             <div class="home_01_index"> <!-- 섹션 index 시작 -->
                 <div class="home_01_index_wrap">
-                    <p class="home_01_index_number">01.</p>
-                    <div class="home_01_index_line"></div>
+                    <p class="white">01.</p>
+                    <div class="index_line_white"></div>
                 </div>
             </div> <!-- 섹션 index 끝 -->
         
             <div class="home_01_content">
                 <div class="home_01_content_wrap">
-                    <div class="home_01_content_subtitle">Win.</div>
+                    <div class="white">Win.</div>
 
                     <div class="home_01_index_subwrap">
-                        <h2 class="home_01_content_title">Huge Thanks.</h2>
-                        <div class="home_01_content_hr"></div>
-                        <p class="home_01_content_description" >Campaign US
+                        <h2 class="white">Huge Thanks.</h2>
+                        <div class="line_white"></div>
+                        <p class="white">Campaign US
                             named Huge its 2019 Innovation Agency <br> of the Year.</p>
                     </div>
                 </div>
@@ -76,26 +130,26 @@
 
 </section> <!-- 섹션 끝-->
 
-<section class="home_01">
+<section id="home_02">
     <div class="home_01_02_wrap">
         <!-- home 2 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 2 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_02_index_number">02.</p>
-                <div class="home_01_02_index_line"></div>
+                <p class="white">02.</p>
+                <div class="index_line_white"></div>
             </div>
         </div> <!-- 2 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_02_content_subtitle">Work.</div>
+                <div class="white">Work.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_02_content_title">#FreeThePeriod.</h2>
-                    <div class="home_01_02_content_hr"></div>
-                    <p class="home_01_02_content_description">To highlight period inequality, Huge partnered with<br>
+                    <h2 class="white">#FreeThePeriod.</h2>
+                    <div class="line_white"></div>
+                    <p class="white">To highlight period inequality, Huge partnered with<br>
                     ERIOD. to build a coin-operated toilet paper dispenser<br>
                     and installed it in men's restrooms.</p>
                 </div>
@@ -108,26 +162,27 @@
 
 </section> <!-- 2 섹션 끝-->
 
-<section class="home_01">
+<section id="home_03">
     <div class="home_01_03_wrap">
         <!-- home 3 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 3 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_03_index_number black">03.</p>
-                <div class="home_01_03_index_line"></div>
+                <p class="black">03.</p>
+                <div class="index_line_black"></div>
             </div>
         </div> <!-- 3 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_03_content_subtitle">Leadership.</div>
+                <div class="black">Leadership.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_03_content_title">Huge<br> Appointment.</h2>
-                    <div class="home_01_03_content_hr"></div>
-                    <p class="home_01_03_content_description">After three years leading global strategic growth for Huge,<br>Matt Weiss has been appointed President, Huge BK.</p>
+                    <h2 class="black">Huge<br>Appointment.</h2>
+                    <div class="line_black"></div>
+                    <p class="black">After three years leading global strategic growth for
+                        Huge,<br>Matt Weiss has been appointed President, Huge BK.</p>
                 </div>
             </div>
         </div>
@@ -138,26 +193,26 @@
 
 </section> <!-- 3 섹션 끝-->
 
-<section class="home_01">
+<section id="home_04">
     <div class="home_01_04_wrap">
         <!-- home 4 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 4 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_04_index_number">04.</p>
-                <div class="home_01_04_index_line"></div>
+                <p class="white">04.</p>
+                <div class="line_white"></div>
             </div>
         </div> <!-- 4 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_04_content_subtitle">Work.</div>
+                <div class="white">Work.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_04_content_title">It's in the bag.</h2>
-                    <div class="home_01_04_content_hr"></div>
-                    <p class="home_01_04_content_description">Huge rebrands grocery delivery service Shipt.</p>
+                    <h2 class="white">It's in the bag.</h2>
+                    <div class="line_white"></div>
+                    <p class="white">Huge rebrands grocery delivery service Shipt.</p>
                 </div>
             </div>
         </div>
@@ -168,26 +223,26 @@
 
 </section> <!-- 4 섹션 끝-->
 
-<section class="home_01">
+<section id="home_05">
     <div class="home_01_05_wrap">
         <!-- home 5 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 5 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_05_index_number">05.</p>
-                <div class="home_01_05_index_line"></div>
+                <p class="black">05.</p>
+                <div class="line_black"></div>
             </div>
         </div> <!-- 5 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_05_content_subtitle">Leadership.</div>
+                <div class="black">Leadership.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_05_content_title">Hello Fura.</h2>
-                    <div class="home_01_05_content_hr"></div>
-                    <p class="home_01_05_content_description">Huge welcomes Fura Johannesdottir as Chief Design<br> Officer.</p>
+                    <h2 class="black">Hello Fura.</h2>
+                    <div class="line_black"></div>
+                    <p class="black">Huge welcomes Fura Johannesdottir as Chief Design<br>Officer.</p>
                 </div>
             </div>
         </div>
@@ -198,26 +253,26 @@
 
 </section> <!-- 5 섹션 끝-->
 
-<section class="home_01">
+<section id="home_06">
     <div class="home_01_06_wrap">
         <!-- home 6 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 6 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_02_index_number">06.</p>
-                <div class="home_01_02_index_line"></div>
+                <p class="white">06.</p>
+                <div class="index_line_white"></div>
             </div>
         </div> <!-- 6 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_02_content_subtitle">Work.</div>
+                <div class="white">Work.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_02_content_title">#ColorCommentary.</h2>
-                    <div class="home_01_02_content_hr"></div>
-                    <p class="home_01_02_content_description">Huge partnered with Pantone on a social media campaign<br> for the Big Game.</p>
+                    <h2 class="white">#ColorCommentary.</h2>
+                    <div class="line_white"></div>
+                    <p class="white">Huge partnered with Pantone on a social media campaign<br> for the Big Game.</p>
                 </div>
             </div>
         </div>
@@ -228,26 +283,27 @@
 
 </section> <!-- 6 섹션 끝-->
 
-<section class="home_01">
-    <div class="home_01_03_wrap">
+<section id="home_07">
+    <div class="home_01_07_wrap">
         <!-- home 7 섹션 wrap 시작 -->
 
         <div class="home_01_index">
             <!-- 7 섹션 index 시작 -->
             <div class="home_01_index_wrap">
-                <p class="home_01_03_index_number">07.</p>
-                <div class="home_01_03_index_line"></div>
+                <p class="black">07.</p>
+                <div class="line_black"></div>
             </div>
         </div> <!-- 7 섹션 index 끝 -->
 
         <div class="home_01_content">
             <div class="home_01_content_wrap">
-                <div class="home_01_03_content_subtitle">Culture.</div>
+                <div class="black">Culture.</div>
 
                 <div class="home_01_index_subwrap">
-                    <h2 class="home_01_03_content_title">Black History<br> Month.</h2>
-                    <div class="home_01_03_content_hr"></div>
-                    <p class="home_01_03_content_description">This is not a moment, issa movement. H by Jacqueline<br> 
+                    <h2 class="black">Black History<br>Month.</h2>
+                    <div class="line_black"></div>
+                    <p class="black">This is not a moment, issa movement. H by
+                        Jacqueline<br>
                     DeBerry</p>
                 </div>
             </div>
@@ -262,7 +318,7 @@
 
 <!-- footer 의 시작 -->
 
-<div class="home_footer bg_color_black">
+<footer class="home_footer bg_color_black">
 
     <div class="footer_content_wrap">
         <div class="footer_content_left">
@@ -287,12 +343,13 @@
     
     
         </div>
-    </div></div>
+    </div>
 
 
-</div>
+</footer>
 
 
 
 </body>
 </html>
+        

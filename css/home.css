@@ -1,3 +1,5 @@
+/* 웹 폰트 링크 */
+
 @font-face {
     font-family: Galaxie-Book;
     src: url(../font/GalaxieCopernicus-Book.woff)
@@ -21,9 +23,6 @@ p {
     color: black;
     font-weight: 200;
 }
-/* color */ 
-.white { color: white; }
-.black { color: black; }
 
 /* 로고 */
 .logo {
@@ -46,10 +45,134 @@ p {
     font-size: 36px;
     font-weight: 700;
     font-family: HugeGothic-Bold;
+    position: absolute;
+    top:25%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
+/* 메뉴 */
+header {
+    width: 100vw;
+    height: 440px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #f4f4f4;
+    visibility: hidden;
+}
+
+nav {
+    width: 100vw;
+    height: 440px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#logo {
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #ea178c;
+    background-color: white;
+    position: fixed;
+    top: 50px;
+    left: calc(50vw - 37px);
+    z-index: 300;
+}
+
+
+.menu_wrap {
+    width: 1050px;
+    height: 90px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_wrap li {
+    width: 190px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    color: black;
+    line-height: 36px;
+}
+
+.menu_wrap li a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+.menu_wrap li p {
+    font-family: Galaxie-Book;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: -1px;
+}
+
+.menu_wrap div {
+    border-bottom: 1px solid black;
+    width: 48px;
+    height: 34px;
+}
+
+.gnb_aside {
+    width: 320px;
+    height: 22px;
+    position: absolute;
+    top: 350px;
+    left: calc(50vw - 160px);
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.gnb_aside p {
+    font-family: Galaxie-Book;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+
+.gnb_aside a {
+    font-family: HugeGothic-Bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 6px;
+    padding-top: 1px;
+}
+
+.gnb_aside span {
+    color: #ea178c;
+}
+
+.gnb_aside a:hover {
+    color: #ea178c;
+    cursor: pointer;
+}
+
+
+
 
 /* 메인 */
 .hello_wrap {
@@ -173,28 +296,20 @@ p {
     justify-content: flex-end;
 }
 
-.home_01_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: white;
-    margin-right: 15px;
+    .home_01_index_wrap>p {
+        font-family: HugeGothic-Bold;
+        font-size: 22px;
+        font-weight: 100;
+        line-height:22px;
+        margin-right: 15px;
 }
 
-.home_01_index_line {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_content {
-    width: 75vw;
-    height: 100vh;
-    padding: 20vh 0;
-    box-sizing: border-box;
-    padding-left: 15px;
+    .home_01_content {
+        width: 75vw;
+        height: 100vh;
+        padding: 20vh 0;
+        box-sizing: border-box;
+        padding-left: 15px;
 }
 
 .home_01_content_wrap {
@@ -202,14 +317,15 @@ p {
     height: 60vh;
 }
 
-.home_01_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: white;
-    line-height: 22px;
-    letter-spacing: 1px;
+    .home_01_content_wrap>div {
+        font-family: HugeGothic-Bold;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 22px;
+        letter-spacing: 1px;
 }
+
+
 
 .home_01_index_subwrap {
     width: 100%;
@@ -219,326 +335,25 @@ p {
     justify-content: center;
 }
 
-.home_01_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: white;
-}
+    .home_01_index_subwrap>h2 {
+        font-family: HugeGothic-Bold;
+        font-size: 80px;
+        font-weight: 100; 
+        line-height: 90px;
+       
 
-.home_01_content_hr {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    margin: 5% 0;
-}
+    }
+        
 
-.home_01_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: white;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* 2section */ 
-
-.home_01_02_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: white;
-    margin-right: 15px;
-}
-
-.home_01_02_index_line {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_02_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: white;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_02_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: white;
-}
-
-.home_01_02_content_hr {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_02_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: white;
-    line-height:
-        30px;
-    width: 85%;
-}
+    .home_01_index_subwrap > p {
+        font-family: Galaxie-Book;
+        font-size: 18px;
+        line-height:30px;
+        width: 100%;
+    }
 
 
-/* 3section */
-
-.home_01_03_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: black;
-    margin-right: 15px;
-}
-
-.home_01_03_index_line {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_03_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: black;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_03_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: black;
-}
-
-.home_01_03_content_hr {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_03_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: black;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* 5sec */
-
-.home_01_04_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: white;
-    margin-right: 15px;
-}
-
-.home_01_04_index_line {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_04_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: white;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_04_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: white;
-}
-
-.home_01_04_content_hr {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_04_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: white;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* 6sec */
-
-
-.home_01_05_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: black;
-    margin-right: 15px;
-}
-
-.home_01_05_index_line {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_05_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: black;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_05_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: black;
-}
-
-.home_01_05_content_hr {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_05_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: black;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* 7sec */
-
-
-.home_01_06_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: white;
-    margin-right: 15px;
-}
-
-.home_01_06_index_line {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_06_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: white;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_06_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: white;
-}
-
-.home_01_06_content_hr {
-    border-bottom: 1px solid white;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_06_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: white;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* 8sec */
-
-.home_01_07_index_number {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    line-height:
-        22px;
-    color: black;
-    margin-right: 15px;
-}
-
-.home_01_07_index_line {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    height: 10px;
-}
-
-.home_01_07_content_subtitle {
-    font-family: HugeGothic-Bold;
-    font-size: 22px;
-    font-weight: 100;
-    color: black;
-    line-height: 22px;
-    letter-spacing: 1px;
-}
-
-.home_01_07_content_title {
-    font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 100;
-    color: black;
-}
-
-.home_01_07_content_hr {
-    border-bottom: 1px solid black;
-    width: 5vw;
-    margin: 5% 0;
-}
-
-.home_01_07_content_description {
-    font-family: Galaxie-Book;
-    font-size: 18px;
-    color: black;
-    line-height:
-        30px;
-    width: 85%;
-}
-
-/* footer */ 
+/* footer */
 .bg_color_black {
     background-color: black;
 }
@@ -546,47 +361,108 @@ p {
 
 /* footer 시작 */
 
-.home_footer { width: 100vw; height: 240px; padding: 70px 0 80px; box-sizing: border-box;}
+.home_footer {
+    width: 100vw;
+    height: 240px;
+    padding: 70px 0 80px;
+    box-sizing: border-box;
+}
 
 
 
 /* div 안에 선택 */
-    .home_footer > div {
+.home_footer>div {
     width: 100vw;
     height: 90px;
-    padding: 0 calc(12.5vw + 15px); display: flex; justify-content: space-between;
+    padding: 0 calc(12.5vw + 15px);
+    display: flex;
+    justify-content: space-between;
+    min-width: 980px;
 }
 
-.footer_content_left { display: flex; align-items:  center;
+.footer_content_left {
+    display: flex;
+    align-items: center;
 }
 
-    .footer_content_left > div {
-    font-family: HugeGothic-Bold; font-size: 36px; line-height: 36px;  border-right: 1px solid #888888; padding-right: 32px; margin-right: 32px; height: 42px;
+.footer_content_left>div {
+    font-family: HugeGothic-Bold;
+    font-size: 36px;
+    line-height: 36px;
+    border-right: 1px solid #888888;
+    padding-right: 32px;
+    margin-right: 32px;
+    height: 42px;
     letter-spacing: 2px;
 }
 
-    .footer_content_left > p {
+.footer_content_left>p {
     font-family: HugeGothic-Bold;
     font-size: 18px;
     line-height: 36px;
 }
 
-.footer_content_right { display: flex; flex-direction: column; }
-    
-    .footer_content_right > div {
+.footer_content_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content_right>div {
     font-family: HugeGothic-Bold;
     font-size: 16px;
     line-height: 14px;
-    color: #C8C8C8; letter-spacing: 1px; line-height: 24px; margin-bottom: 10px;
+    color: #C8C8C8;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
-    .footer_content_right a {margin-right: 15px;}
+.footer_content_right a {
+    margin-right: 15px;
+}
 
-    .footer_content_right a:last-child { margin-right: 0;}
+.footer_content_right a:last-child {
+    margin-right: 0;
+}
 
 .footer_aside {
     font-family: Galaxie-Book;
-    color: #C8C8C8; font-size: 12px; line-height: 18px; text-align: right;
+    color: #C8C8C8;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
 }
 
+/* color */
+.white {
+    color: white;
+}
 
+.black {
+    color: black;
+}
+
+/* border */
+.line_black {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.line_white {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    margin: 5% 0;
+}
+
+.index_line_black {
+    border-bottom: 1px solid black;
+    width: 5vw;
+    height: 10px;
+}
+
+.index_line_white {
+    border-bottom: 1px solid white;
+    width: 5vw;
+    height: 10px;
+}
