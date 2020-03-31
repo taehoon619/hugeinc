@@ -7,6 +7,9 @@
     background-color: black;
     color: white;
     font-size: 56px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: 70px;
     font-family: Galaxie-Book;
     border: 0;
     padding: 0;
@@ -190,4 +193,11 @@
         color: white;
     }
 
-    .work_05_right p { color: white;}
+    .work_05_right p {
+        color: white;
+        font-family: Galaxie-Book;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 100;
+        width: 100%;
+    }

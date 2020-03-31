@@ -9,26 +9,229 @@
     font-family: HugeGothic-Bold;
     src: url(../font/HugeGothic-Bold.woff)
 }
+/*
 
-h1 {
-    font-family: HugeGothic-Bold;
-    font-size: 300px;
-    color: black;
-    font-weight: 600;
-}
+1 HugeGothic-Bold; 170px 170px no > h1
 
-h2 {
+2 HugeGothic-Bold; 80px  84px -2px > h2
+3 HugeGothic-Bold; 56px  70px -4px > h3
+3 Galaxie-Book; 56px 70px -4px > .h3_serif
+
+4 HugeGothic-Bold; 44px 44px no > .h_h4
+5 HugeGothic-Bold; 24px  30px no > .h_h5
+6 HugeGothic-Bold; 22px  26px 16px no   > .h_h6
+
+8 Galaxie-Book;    18px 34px -0.27504px > p
+9 Galaxie-Book;    16px no -1px > .p_small
+
+10. HugeGothic-Bold; 14px 20px no > p>special
+11. Galaxie-Book; 12px 22.6667px -0.27504px > .p_small_2
+
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: HugeGothic-Bold;
-    font-size: 80px;
-    font-weight: 600px;
-    line-height: 100px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 p {
     font-family: Galaxia-Book;
-    font-size: 24px;
     color: black;
-    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.h1_hello {
+    font-family: HugeGothic-Bold;
+    font-size: 390px;
+    font-weight: 600;
+    line-height: 290px;
+    color: black;
+}
+
+h1 {
+     font-size: 170px; 
+     line-height: 170px;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 84px;
+    letter-spacing: -2px;
+}
+
+h3 {
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: -4px;
+}
+
+p { 
+    font-size: 18px;
+    line-height: 34px; 
+    letter-spacing: -0.27504;
+}
+
+.h3_serif {
+    font-family: Galaxie-Book;
+    font-size: 56px;
+    line-height: 70px;
+    letter-spacing: -4px;
+}
+
+.h4_sans { 
+    font-size: 44px; 
+    line-height: 44px;
+}
+.h5_sans {
+    font-size: 24px;
+    line-height: 30px;
+}
+.h6_sans {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+.p_small_1 { 
+    font-size: 16; 
+    letter-spacing: -1px;
+}
+.p_small_2 {
+    font-size: 16;
+    line-height: 22.6667px;
+    letter-spacing: -0.27504px;
+}
+
+.p_small_sans {
+     font-size: 14px;
+     line-height: 20px;
+    }
+
+/*
+h5 {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15.9999px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+.h2_work_아이콘 {
+    font-family: HugeGothic-Bold;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.div_work_섹션제목 {
+    font-family: HugeGothic-Bold;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 15.9999px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+
+.div_work {
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: 70px;
+    font-family: Galaxie-Book;
+}
+
+.h3_work_magenta {
+    font-family: HugeGothic-Bold;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 84px;
+    letter-spacing: -2px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.h1_about {
+    font-family: HugeGothic-Bold;
+    font-size: 170px;
+    font-weight: 400;
+    line-height: 169px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.h2_about_탑메뉴 {
+    font-family: HugeGothic-Bold;
+    font-size: 24px;
+    line-height: 15.9999px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.h2_about {
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: 70px;
+    font-family: Galaxie-Book;
+}
+
+.h2_aubot_아이콘 {
+    font-family: HugeGothic-Bold;
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.p_about {
+    font-family: Galaxia-Book;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    letter-spacing: -0.27504px;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+*/
+.h6_footer메뉴 {
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: -0.27504px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.p_footer_caption {
+    font-family: Galaxia-Book;
+    font-size: 12px;
+    line-height: 22.6667px;
+    font-weight: 400;
+    letter-spacing: -0.27504px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 

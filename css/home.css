@@ -204,8 +204,9 @@
     .home_01_index_subwrap > p {
         font-family: Galaxie-Book;
         font-size: 18px;
-        line-height:30px;
+        line-height:34px;
         width: 100%;
+        letter-spacing: -0.27504px;
     }
 
 
