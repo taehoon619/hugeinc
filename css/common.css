@@ -42,8 +42,9 @@ h6 {
 }
 
 p {
-    font-family: Galaxia-Book;
-    color: black;
+    font-family: Galaxie-Book;
+    font-weight: 400;
+    
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -60,7 +61,7 @@ h1 {
      font-size: 170px; 
      line-height: 170px;
 }
-
+    
 h2 {
     font-size: 80px;
     font-weight: 600;
@@ -72,6 +73,21 @@ h3 {
     font-size: 56px;
     line-height: 70px;
     letter-spacing: -4px;
+}
+
+h4 {
+    font-size: 44px;
+    line-height: 44px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 22px;
+    line-height: 26px;
 }
 
 p { 
@@ -96,8 +112,8 @@ p {
     line-height: 30px;
 }
 .h6_sans {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .p_small_1 { 
@@ -288,7 +304,6 @@ nav {
 .menu_wrap {
     width: 1050px;
     height: 90px;
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
@@ -333,7 +348,6 @@ nav {
     position: absolute;
     top: 350px;
     left: calc(50vw - 160px);
-    background-color: yellow;
     display: flex;
     justify-content: center;
 }
