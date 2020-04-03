@@ -1,0 +1,203 @@
+.work_02 {
+    width: 100vw;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: 70px;
+    font-family: Galaxie-Book;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.work_03 {
+    background-color: black;
+    width: 100vw;
+    padding-bottom: 95px;
+}
+
+.work_03_ul {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* 간격을 정해줌 그대로 반복이 가능하다. */
+}
+
+.work_03_ul li {
+    width: 30vw;
+    height: 30vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 28px 48px;
+    font-size: 44px;
+    font-family: HugeGothic-Bold;
+    color: white;
+}
+
+/* 배경화면 정리 형식을 기억하자 */
+.work_03_ul li:nth-child(1) {
+    background-image: url(../img/Thumbnail2.jpg);
+}
+.work_03_ul li:nth-child(2) {
+    background-image: url(../img/android-work-tile.jpg);
+}
+.work_03_ul li:nth-child(3) {
+    background-image: url(../img/AMC_workTile.jpg);
+}
+.work_03_ul li:nth-child(4) {
+    background-image: url(../img/tile-goose__1_.jpg);
+}
+.work_03_ul li:nth-child(5) {
+    background-image: url(../img/Google_Tile.jpg);
+}
+.work_03_ul li:nth-child(6) {
+    background-image: url(../img/Work_Thumbnails_Gucci__1_.jpg);
+}
+.work_03_ul li:nth-child(7) {
+    background-image: url(../img/HULU__1___1__2__1_.jpg);
+}
+.work_03_ul li:nth-child(8) {
+    background-image: url(../img/Hero-background-1__11___1_.jpg);
+}
+.work_03_ul li:nth-child(9) {
+    background-image: url(../img/LG_900Tile__1___2_.jpg);
+}
+.work_03_ul li:nth-child(10) {
+    background-image: url(../img/Lenovo_WorkTile.jpg);
+}
+.work_03_ul li:nth-child(11) {
+    background-image: url(../img/tile-today.jpg);
+}
+.work_03_ul li:nth-child(12) {
+    background-image: url(../img/Nike_work_thumbnail1__1_.jpg);
+}
+.work_03_ul li:nth-child(13) {
+    background-image: url(../img/Pfizer_tile__1_.jpg);
+}
+.work_03_ul li:nth-child(14) {
+    background-image: url(../img/SK-II__1_.jpg);
+}
+.work_03_ul li:nth-child(15) {
+    background-image: url(../img/randstad_casestudythumbnail-2__1_.png);
+}
+.work_03_ul li:nth-child(16) {
+    background-image: url(../img/Telus_work_thumbnail.jpg);
+}
+.work_03_ul li:nth-child(17) {
+    background-image: url(../img/Google_Tile.jpg);
+}
+
+/* work 04 */
+.work_04 {
+    background-color: #111111;
+    width: 100%vw;
+    height: 100vh;
+    padding: 140px 0;
+}
+
+.work_04_wrap {
+    width: 74.68354%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.work_04_left {
+    width: 32.20339%;
+}
+
+    .work_04_left>hr {
+        width: 47.36842%;
+        height: 1px;
+        border-top: 1px white solid;
+    }
+
+    .work_04_left>h4 {
+        font-family: HugeGothic-Bold;
+        font-size: 24px;
+        color: white;
+        line-height: 40px;
+    }
+
+.work_04_right {
+    display: flex;
+    width: 66.10169%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: flex-start;
+}
+
+    .work_04_right li {
+        width: 15.38462%;
+        margin-right: 10.25641%;
+        margin-bottom: 50px;
+        box-sizing: border-box; 
+    }
+
+    .work_04_right img {
+        width: 100%;
+    }
+
+    .work_04_right li:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    /* 05 */
+    .work_05 {
+        width: 100vw;
+        background-image: url(../img/9.jpg);
+        background-size: cover;
+        position: relative;
+      }
+
+        .work_05 > div:first-child{background-color: rgba(0, 0, 0, 0.7);
+        padding: 200px 0;}
+
+       /* .work_05::before { background-color:  rgba(0, 0, 0, 0.7);
+         position: absolute; left: 0; top: 0; bottom: 0; right: 0; width: 100vw; z-index: 200;}
+        */
+    
+    .work_05_wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work_05_left {
+        width: 18.98734%;
+        padding-bottom: 18.98734%;
+        background-image: url(../img/magenta-hero.gif);
+        background-size: cover;
+        margin-right: 1.25%;
+    }
+
+    .work_05_right {
+        width: 43.03797%;
+        margin-left: 5.06329%;
+        margin-right: 1.26582%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .work_05_right p {
+        color: white;
+        font-family: Galaxie-Book;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 100;
+        width: 100%;
+    }

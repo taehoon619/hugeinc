@@ -1,0 +1,253 @@
+/* 네이버 네비게이션!
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7)
+    
+}
+
+h1 {
+    font-family: HugeGothic-Bold;
+    font-size: 300px;
+    letter-spacing: 10px;
+    color: black;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc(50vw - 770px);
+    box-sizing: border-box;
+    align-items: center;}
+    
+    .gnb_left {
+        width: 90px; height: 80px;
+        display: flex;
+        align-items: center;
+        
+    }
+    .gnb_center {
+        width: 600px; height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    .gnb_right {
+        width: 200px; height: 80px;
+        
+        display: flex; 
+        justify-content: flex-end;
+         align-items: center;
+    }
+
+.gnb a {
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    color: white;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-decoration:
+        none;
+}
+
+
+.gnb a:hover {
+    color: #ea178c;
+}
+
+.gnb a:active {
+    color: #ea178c;
+}
+
+.gnb a:visited {
+    color: white;
+}
+
+.logo1 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: rgba(0, 0, 0, 7);
+    line-height:
+        32px;
+    font-family: HugeGothic-Bold;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo1:hover {
+    background-color: #ea178c;
+    color: white
+} 네이버 네비게이션 끝 */ 
+
+
+/*
+#hone_02 {
+    background-image: url(img/hugeinc02.png);
+    background-size: cover;
+}
+
+#home_02>h1 {
+    color: black;
+    font-size: 120px;
+}
+
+
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.10)
+}
+
+h1 {
+    font-family: HugeGothic-Bold;
+    font-size: 300px;
+    letter-spacing: 10px;
+    color: black;
+} */
+
+
+/* 만들어보기 휴즈
+.huge_nav {
+    width: 100vw;
+    height: 440px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.huge_nav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin: auto;
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+    background-color: coral;
+}
+
+.huge_menu_content {
+    width: 190px;
+    height: 91px;
+    font-family: HugeGothic-Bold; 
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    text-align: center;
+    background-color: burlywood;
+}
+
+
+.huge_menu {
+    font-size: 36px;
+    line-height: 32px;
+    background-color: cornflowerblue;
+    
+}
+
+.menu_discription {
+    font-family: "Copernicus", serif;
+    font-size: .875rem;
+    letter-spacing: -.04063rem;
+    line-height: 1.42857;
+}
+
+.nav_line { border-bottom: 1px solid black; }
+
+
+.huge_nav_bottom {
+    width: 299px;
+    height: 22px;
+    bottom: auto;
+    left: calc(50% - 149px);
+    position: absolute;
+    top: 345px;
+    background-color: coral;
+    }
+*/
+
+header {
+    width: 100vw;
+    height: 440px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #f4f4f4;
+    visibility: hidden;
+}
+nav {
+    width: 100vw;
+    height: 440px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+#logo {
+    width: 74px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: HugeGothic-Bold, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #ea178c;
+    background-color: white; position: fixed; top: 50px; left: calc(50vw - 37px );
+    z-index: 300;
+}
+
+
+.menu_wrap { width: 1050px; height: 90px; background-color: yellow; display: flex; justify-content: space-between; }
+.menu_wrap li { width: 190px; height: 90px; display: flex; flex-direction: column; align-items: center;}
+
+.menu_wrap li a {
+    font-family: HugeGothic-Bold; font-size: 36px; color: black; line-height: 36px;
+}
+
+.menu_wrap li a:hover {color: #ea178c; cursor: pointer;}
+.menu_wrap li p {
+    font-family: Galaxie-Book; font-size: 14px; font-weight: 100; line-height: 26px; letter-spacing: -1px;
+}
+.menu_wrap div { border-bottom: 1px solid black; width: 48px; height: 34px; }
+
+.gnb_aside { width: 320px; height: 22px; position: absolute; top: 350px; left: calc(50vw - 160px); background-color: yellow; display: flex; justify-content: center;}
+
+.gnb_aside p {
+    font-family: Galaxie-Book;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 22px;
+    letter-spacing: -1px;
+}
+
+.gnb_aside a {
+    font-family: HugeGothic-Bold;
+    font-size: 16px;
+    line-height: 21px;
+    margin-left: 6px;
+    padding-top: 1px;
+}
+
+.gnb_aside span { color: #ea178c;}
+
+.gnb_aside a:hover { color: #ea178c; cursor: pointer;}
