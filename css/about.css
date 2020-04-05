@@ -72,7 +72,7 @@
     background-color: black; 
     padding: 140px 0; 
     box-sizing: border-box;
- }
+}
 
 .our_service_container {
     width: 74.68354%;
@@ -80,15 +80,15 @@
 }
 
 .section_subtitle_nopadding {
-     width: 32.20339%;
-     margin-bottom: 50px;
- }
+width: 32.20339%;
+margin-bottom: 50px;
+}
 
 .section_subtitle_rule_w {
-     width: 47.36842%;
-     border-top: 1px solid white;
-     margin-bottom: 20px;
- }
+width: 47.36842%;
+border-top: 1px solid white;
+margin-bottom: 20px;
+}
 
 .our_service_content_container { 
     width: 100%; 
@@ -194,6 +194,8 @@ width: 40%;}
     margin: 0 auto;
 }
 
+.section_subtitle_offices {width: 32.20339%; }
+
 .section_subtitle_rule_wi {
 width: 47.36842%;
 border-top: 1px solid white;
@@ -223,3 +225,93 @@ margin-bottom: 20px;
 .our_offices_list li:nth-child(4n+1) { margin-left: 0;}
 
 .our_offices_list a:hover { color: #ea178c;}
+
+.our_leadership {
+    width: 100vw;
+    background-color: white;
+    padding: 140px 0;
+    box-sizing: border-box;
+}
+
+
+.our_leadership_container {
+    width: 74.68354%;
+    margin: 0 auto;
+}
+
+.section_subtitle_leadership {
+    width: 32.20339%;
+}
+
+.our_leadership_container h6 {margin-bottom: 60px;}
+
+.our_leadership_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 25px; 
+}
+
+.our_leadership_list li {
+    width: 30%;
+    padding-top: 40px;
+    margin-right: 5px;
+    border-bottom: 1px solid #666;
+}
+
+.our_leadership_list p {color: #000; opacity: 0.5; margin-bottom: 40px;}
+
+.our_leadership_list li:hover {color: #ea178c; cursor: pointer;}
+
+.our_leadership_list li:nth-last-child(1) {border: none;} 
+.our_leadership_list li:nth-last-child(2) {border: none;}   
+.our_leadership_list li:nth-last-child(3) {border: none;} 
+
+
+/* 05 */
+.work_05 {
+    width: 100vw;
+    background-image: url(../img/9.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+    .work_05 > div:first-child{background-color: rgba(0, 0, 0, 0.7);
+    padding: 200px 0;}
+
+/* .work_05::before { background-color:  rgba(0, 0, 0, 0.7);
+    position: absolute; left: 0; top: 0; bottom: 0; right: 0; width: 100vw; z-index: 200;}
+    */
+
+    .work_05_wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work_05_left {
+        width: 18.98734%;
+        padding-bottom: 18.98734%;
+        background-image: url(../img/magenta-hero.gif);
+        background-size: cover;
+        margin-right: 1.25%;
+    }
+
+    .work_05_right {
+        width: 43.03797%;
+        margin-left: 5.06329%;
+        margin-right: 1.26582%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+
+    .work_05_right p {
+        color: white;
+        font-family: Galaxie-Book;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 100;
+        width: 100%;
+    }

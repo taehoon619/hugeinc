@@ -58,8 +58,8 @@ p {
 }
 
 h1 {
-     font-size: 170px; 
-     line-height: 170px;
+    font-size: 170px; 
+    åline-height: 170px;
 }
     
 h2 {
@@ -96,6 +96,13 @@ p {
     letter-spacing: -0.27504;
 }
 
+.p_huge { font-size: 24px;
+    line-height: 1.25;
+    font-family: HugeGothic-Bold;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;}
+
 .h3_serif {
     font-family: Galaxie-Book;
     font-size: 56px;
@@ -127,8 +134,8 @@ p {
 }
 
 .p_small_sans {
-     font-size: 14px;
-     line-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
     }
 
 /*
@@ -252,9 +259,7 @@ h5 {
 
 
 /* 컬러 */
-    .white {
-        color: white;
-    }
+.color_white { color: white;}
 
     .black {
         color: black;

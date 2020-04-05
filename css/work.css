@@ -160,13 +160,13 @@
         background-image: url(../img/9.jpg);
         background-size: cover;
         position: relative;
-      }
+    }
 
         .work_05 > div:first-child{background-color: rgba(0, 0, 0, 0.7);
         padding: 200px 0;}
 
-       /* .work_05::before { background-color:  rgba(0, 0, 0, 0.7);
-         position: absolute; left: 0; top: 0; bottom: 0; right: 0; width: 100vw; z-index: 200;}
+    5/* .work_05::before { background-color:  rgba(0, 0, 0, 0.7);
+        position: absolute; left: 0; top: 0; bottom: 0; right: 0; width: 100vw; z-index: 200;}
         */
     
     .work_05_wrap {
