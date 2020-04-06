@@ -19,7 +19,7 @@
 
 /* about_hero */
 .hero_about {
-    background-image: url(../img/About/IMG_3864.jpg);
+    background-image: url(../img/about/IMG_3864.jpg);
 }
 
 .hero_title {
@@ -253,10 +253,10 @@ margin-bottom: 20px;
 }
 
 .our_leadership_list li {
-    width: 30%;
     padding-top: 40px;
-    margin-right: 5px;
-    border-bottom: 1px solid #666;
+    flex: 0 0 33%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 3px;
 }
 
 .our_leadership_list p {color: #000; opacity: 0.5; margin-bottom: 40px;}
@@ -271,7 +271,7 @@ margin-bottom: 20px;
 /* 05 */
 .work_05 {
     width: 100vw;
-    background-image: url(../img/9.jpg);
+    background-image: url(../img/about/huge_magenta.jpg);
     background-size: cover;
     position: relative;
 }
@@ -286,7 +286,7 @@ margin-bottom: 20px;
     .work_05_wrap {
         width: 100vw;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
 
     .work_05_left {
@@ -295,6 +295,7 @@ margin-bottom: 20px;
         background-image: url(../img/magenta-hero.gif);
         background-size: cover;
         margin-right: 1.25%;
+        margin-left: 12.65823%;
     }
 
     .work_05_right {

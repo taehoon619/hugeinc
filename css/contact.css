@@ -11,7 +11,7 @@
 
 /* contact_hero */
 .hero_contact {
-    background-image: url(../img/Contact//RoyalPalms-16__2__crop__1___1___2_.jpg);
+    background-image: url(../img/contact//RoyalPalms-16__2__crop__1___1___2_.jpg);
 }
 
 .hero_title {
@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 
-
+/* hello */
 .contact_hello {
     width: 100vw;
     box-sizing: border-box;
@@ -50,11 +50,15 @@
     margin-bottom: 20px;
     }
 
-.contact_hello_content { width: 66.10169%; margin-left: 1.69492%; }
+.contact_hello_content { width: 66.10169%; margin-left: 1.69492%;}
 
 .contact_hello_list { display: flex; flex-wrap: wrap;}
 
-.contact_hello_list li { width: 48.71795%; margin-top: 100px;}
+.contact_hello_list li {
+    width: 48.71795%;
+    margin-top: 100px;
+    padding-right: 1.26582%;
+}
 
 .contact_hello_list p { font-size: 18px;
     line-height: 34px; 
@@ -105,7 +109,7 @@ margin: 0 auto; }
 /* 05 */
 .work_05 {
     width: 100vw;
-    background-image: url(../img/9.jpg);
+    background-image: url(../img/contact/huge_magenta_03.png);
     background-size: cover;
     position: relative;
 }
@@ -120,7 +124,7 @@ margin: 0 auto; }
     .work_05_wrap {
         width: 100vw;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
 
     .work_05_left {
@@ -128,6 +132,7 @@ margin: 0 auto; }
         padding-bottom: 18.98734%;
         background-image: url(../img/magenta-hero.gif);
         background-size: cover;
+        margin-left: 12.65823%;
         margin-right: 1.25%;
     }
 
