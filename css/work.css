@@ -50,70 +50,100 @@
     flex-wrap: wrap; /* 간격을 정해줌 그대로 반복이 가능하다. */
 }
 
-.work_03_ul li {
+.work_03_ul a {
     width: 30vw;
     height: 30vw;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 0 28px 48px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+    padding-top: calc(30vw - 84px);
+    padding-left: 48px;
     font-size: 44px;
     font-family: HugeGothic-Bold;
     color: white;
 }
 
+.work_03_ul li {
+    width: 30vw;
+    height: 30vw;
+    font-size: 44px;
+    font-family: HugeGothic-Bold;
+    color: white;
+}
+
+.pointer { margin-top: 30px;}
+
+.work_03_ul a:hover { background-color: rgba(0, 0, 0, 0.5); padding-top:calc(30vw - 124px);}
+
+
 /* 배경화면 정리 형식을 기억하자 */
 .work_03_ul li:nth-child(1) {
     background-image: url(../img/Thumbnail2.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(2) {
     background-image: url(../img/android-work-tile.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(3) {
     background-image: url(../img/AMC_workTile.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(4) {
     background-image: url(../img/tile-goose__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(5) {
     background-image: url(../img/Google_Tile.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(6) {
     background-image: url(../img/Work_Thumbnails_Gucci__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(7) {
     background-image: url(../img/HULU__1___1__2__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(8) {
     background-image: url(../img/Hero-background-1__11___1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(9) {
     background-image: url(../img/LG_900Tile__1___2_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(10) {
     background-image: url(../img/Lenovo_WorkTile.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(11) {
     background-image: url(../img/tile-today.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(12) {
     background-image: url(../img/Nike_work_thumbnail1__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(13) {
     background-image: url(../img/Pfizer_tile__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(14) {
     background-image: url(../img/SK-II__1_.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(15) {
     background-image: url(../img/randstad_casestudythumbnail-2__1_.png);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(16) {
     background-image: url(../img/Telus_work_thumbnail.jpg);
+    background-size: cover;
 }
 .work_03_ul li:nth-child(17) {
     background-image: url(../img/Google_Tile.jpg);
+    background-size: cover;
 }
 
 /* work 04 */
