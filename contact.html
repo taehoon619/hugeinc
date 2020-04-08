@@ -27,10 +27,12 @@
 
         function logoClick(params) {
             if (header_state == 0) {
-                document.getElementById("home_header").style = "visibility:visible;"
+                document.getElementById("home_header").style = "height:440px"
+
                 header_state = 1; /* 헤더 클릭 상태로 전환, 헤더 보이기 상태 */
             } else {
-                document.getElementById("home_header").style = "visibility:hidden;"
+                document.getElementById("home_header").style = "height:0px"
+
                 header_state = 0; /* 로고 클릭 상태로 기억, 헤더 안보이기 상태 */
             }
         }
@@ -73,10 +75,10 @@
                 </li>
 
             </ul>
+            <div class="gnb_aside">
+                <p>Explore our thought leadership at</p><a>MAGENTA<span>.</span></a>
+            </div>
         </nav>
-        <div class="gnb_aside">
-            <p>Explore our thought leadership at</p><a>MAGENTA<span>.</span></a>
-        </div>
 
     </header>
 

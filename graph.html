@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <title> graph.</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Huge Inc Website">
+    <meta name="keywords" content="Design, Agency, Web, UI, UX ">
+    <meta name="author" content="Lee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- 폰트 링크 -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap">
+
+    <!-- css 링크 -->
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css"> <!-- 공통 -->
+<style>
+    @keyframes graph_usa { 
+        0% { width: 80px; }
+        10% { width: 120px; }
+        20% { width: 164px; background-color: red;}
+        30% { width: 184px; background-color: orange;}
+        40% { width: 254px; background-color: yellow;}
+        50% { width: 360px; background-color: green;}
+        60% { width: 604px; background-color: blue;}
+        70% { width: 1204px; background-color: navy;}
+        80% { width: 1304px; background-color: purple;}
+        90% { width: 1404px; background-color: gold;}
+        100% { width: 1604px; background-color: mediumaquamarine;}
+    }
+    @keyframes graph_spain {
+        from { width: 80px;}
+        to { width: 975px;}
+    }
+    @keyframes graph_italy {
+    from { width: 80px;}
+    to { width: 852px;}
+    }
+    @keyframes graph_china {
+    from { width: 80px;}
+    to { width: 520px;}
+    }
+    @keyframes graph_korea {
+    from { width: 80px;}
+    to { width: 200px;}
+    }
+
+
+    .container { width: 100%; height: 100vh; display: flex; justify-content: flex-start; align-items: center;
+    padding-left: 10%; position: relative;}
+
+    ol { position: absolute; top: 120px; }
+    li { color:white; text-align: right;}
+
+    .usa{ width: 80px; height: 60px; background-color: black; margin-bottom: 20px; transition: width 5s linear;
+    animation-name: graph_usa; animation-duration: 30s;animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite ;}
+    .spain { width: 80px; height: 60px; background-color: pink;margin-bottom: 20px; transition: width 5s linear;
+    animation-name: graph_spain; animation-duration: 30s;animation-timing-function: linear;}
+    .italy { width: 80px; height: 60px; background-color: green;margin-bottom: 20px; transition: width 5s linear;
+    animation-name: graph_italy; animation-duration: 30s;animation-timing-function: linear; }
+    .china { width: 80px; height: 60px; background-color: red;margin-bottom: 20px; transition: width 10s linear;
+    animation-name: graph_china; animation-duration: 30s;animation-timing-function: linear; }
+    .korea { width: 80px; height: 60px; background-color: blue;; margin-bottom: 20px; transition: width 3s ease-in;
+    animation-name: graph_korea; animation-duration: 30s; animation-timing-function: linear;}
+
+    .usa:hover { width: 1604px;}
+    .spain:hover { width: 975px;}
+    .italy:hover { width: 852px;}
+    .china:hover { width: 520px;}
+    .korea:hover { width: 200px;}
+
+    
+    .border_line { display: flex; height: 80vh;  }
+    span {width: 100px; border-right: 1px solid gray; text-align: right; margin-left: 30px;}
+  
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="border_line">
+            <span>2/2</span>
+            <span>2/3</span>
+            <span>2/4</span>
+            <span>2/5</span>
+            <span>2/6</span>
+            <span>2/7</span>
+            <span>2/8</span>
+            <span>2/9</span>
+            <span>2/10</span>
+            <span>2/11</span>
+            <span>2/12</span>
+            <ol>
+                <li class="usa">
+                    <h4>USA</h4>
+                </li>
+                <li class="spain">
+                    <h4>Spain</h4>
+                </li>
+                <li class="italy">
+                    <h4>Italy</h4>
+                </li>
+                <li class="china">
+                    <h4>China</h4>
+                </li>
+                <li class="korea">
+                    <h4>Korea</h4>
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
