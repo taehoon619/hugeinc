@@ -61,7 +61,8 @@
     font-size: 44px;
     font-family: HugeGothic-Bold;
     color: white;
-}
+    transition: background-color 0.4s, padding-top 0.4s;
+} /* 트렌지션 효과  */
 
 .work_03_ul li {
     width: 30vw;
@@ -73,7 +74,7 @@
 
 .pointer { margin-top: 30px;}
 
-.work_03_ul a:hover { background-color: rgba(0, 0, 0, 0.5); padding-top:calc(30vw - 124px);}
+.work_03_ul a:hover { background-color: rgba(0, 0, 0, 0.5); padding-top:calc(30vw - 134px);}
 
 
 /* 배경화면 정리 형식을 기억하자 */

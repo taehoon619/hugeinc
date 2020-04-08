@@ -142,7 +142,7 @@
     justify-content: space-between;
 }
 
-.dog {
+.dog img {
     width: 100%;
     display: flex;
     flex: 1 1 49.36709%;
@@ -157,7 +157,7 @@
     justify-content: space-between;
 }
 
-.sket {
+.sket img{
     width: 100%;
     margin-bottom: 1.26582vw;
     display: flex;
@@ -166,7 +166,7 @@
     overflow: hidden;
 }
 
-.table {
+.table img {
     width: 100%;
     display: flex;
     flex: 1 1 49.36709%;
@@ -181,7 +181,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 50vw;
+    max-height: 40vw;
     width: 100%;
     min-height: 480px;
     overflow: hidden;
@@ -201,6 +201,7 @@
 .fish {
     width: 62.02532%;
     flex: 1.464;
+    margin-right: 0;
 }
 
 .fish img {

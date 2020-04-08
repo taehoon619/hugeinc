@@ -276,21 +276,31 @@ h5 {
 }
 
 /* 메뉴 */
+@keyframes logo_header {
+    from { height: 0px;}
+    to {height: 440px; }
+}
+
+@keyframes logo_header_off {
+    
+}
+
 header {
     width: 100vw;
-    height: 440px;
+    height: 0px;
+    display: block;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 200;
     background-color: #f4f4f4;
-    visibility: hidden;
+    overflow: hidden;
+    transition: height 500ms;
 }
 
 nav {
     width: 100vw;
     height: 440px;
-
     display: flex;
     justify-content: center;
     align-items: center;
